@@ -1,0 +1,94 @@
+{% extends "mapapp/base.html" %}
+{% load tethys_gizmos %}
+{% load staticfiles %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+
+  <h3><b>Project Proposal</b></h3>
+  <h3><i>Snowpack Viewer/Projected Runoff Analysis</i></h3>
+  <h3>CEEn 514 - Geospatial software development</h3>
+  <h5>Travis McStraw, Jorge Sanchez, Jason Biesinger</h5>
+
+  <p><b>Project Title</b></p>
+  <p>
+  Snowpack Viewer/Expected Runoff Analysis Application
+  </p>
+  <br>
+  <p><b>Team Name</b></p>
+  <p>
+    The Snowmen
+  </p>
+  <br>
+  <p><b>Team Members</b></p>
+  <p>
+  Jason Biesinger, Jorge Sanchez, Travis McStraw
+  </p>
+  <br>
+
+  <p><b>HOME PAGE</b></p>
+  <img src="http://127.0.0.1:8000/static/mapapp/images/mock_up_01.jpg", height="500px">
+  <p>
+  This will be the original page that will be displayed when you open the app. You will be able to
+select a region from this page. There will be a drop-down list of predefined regions/mountain
+ranges and by clicking the view region the regional analysis page shown later will be displayed
+for the selected region. The links to other pages can be found on the side of every other page
+of the app and the info/documentation, home, and settings buttons will be in the top left menu
+of every page as well.
+  </p>
+  <br>
+
+  <p><b>GLOBAL MAP PAGE</b></p>
+  <img src="http://127.0.0.1:8000/static/mapapp/images/mock_up_02.jpg", height="500px">
+  <p>
+  This page will display a global map of the snowpack data. The map will have interactive zoom
+features and possibly a user defined point or polygon feature where the change in snowpack
+over time can be displayed for a single point or a polygon drawn by the user. The different time
+steps can be cycled through or can be played as an animation using the controls at the top. A
+single time step can also be displayed using the select a day tool.
+  </p>
+  <br>
+
+  <p><b>REGIONAL ANALYSIS PAGE</b></p>
+  <img src="http://127.0.0.1:8000/static/mapapp/images/mock_up_03.jpg", height="500px">
+  <p>
+  This is the page that will be displayed once a region is selected. The same features will exist
+here as in the global map, with the addition of a time series graph for that particular region.
+The Map interaction dropdown will be the feature described previously that allows the user to
+view the time series of a particular point or a user drawn polygon.
+  </p>
+  <br>
+
+  <p><b>ADD REGION PAGE</b></p>
+  <img src="http://127.0.0.1:8000/static/mapapp/images/mock_up_04.jpg", height="500px">
+  <p>
+  Here the user will specify the necessary information to add a region to the app. The choose
+shapefile button will allow the user to upload a shapefile of a particular region that he/she is
+interested in.
+  </p>
+  <br>
+
+<p><b>MANAGE REGIONS PAGE</b></p>
+  <img src="http://127.0.0.1:8000/static/mapapp/images/mock_up_05.jpg", height="500px">
+  <p>
+  This page will allow the user to view all of the available regions and delete regions if they no
+longer desire them to be available in the app.
+  </p>
+  <br>
+
+  <p> <a href="http://127.0.0.1:8000/static/mapapp/pdf/Mock_Up_Builder_Wire_Frame.pdf">More Info</a></p>
+
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}

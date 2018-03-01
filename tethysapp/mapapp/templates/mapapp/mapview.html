@@ -1,0 +1,32 @@
+{% extends "mapapp/base.html" %}
+{% load tethys_gizmos %}
+{% load staticfiles %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+
+{% block app_content %}
+<h1><b>The Snow Pack Project</b></h1>
+  <p>by Jorge Luis Sanchez-Lozano</p>
+  <p>February 26th, 2018</p>
+  <br>
+  <h5> View Snotel Stations <input type="checkbox" checked="true" id="Snotel_Stations" onClick="showHide();"/> </h5>
+  <h5> View Utah Counties <input type="checkbox" checked="true" id="Utah_Counties" onClick="showHide();"/> </h5>
+  <h5> View Utah Digital Elevation Model <input type="checkbox" checked="true" id="Utah_DEM" onClick="showHide();"/> </h5>
+  <br>
+  <br>
+  <div id="showMap"></div>
+
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "mapapp/base.html" %}
+{% load tethys_gizmos %}
+
+{% block header_buttons %}
+  <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
+    <a data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+<h1><b>About</b></h1>
+  <p>February 26th, 2018</p>
+  <br>
+  <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11701122_10153525641369432_3500578196481497575_n.jpg?oh=6b7a3dbe2fdddac3a15ca8a32169c00c&oe=5B1110F5", class="photo">
+  <h4>
+    <b><a href="https://www.linkedin.com/in/jorge-luis-sanchez-lozano-27866a89/?locale=en_US">Jorge Luis Sanchez-Lozano</a></b> is a <a href="https://en.wikipedia.org/wiki/Civil_engineering">Civil Engineering</a>
+    PhD Student at <a href="https://www.byu.edu/">Brigham Young University</a>. He was born in <a href="https://en.wikipedia.org/wiki/La_Dorada,_Caldas">La Dorada</a>, <a href="https://en.wikipedia.org/wiki/Caldas_Department">Caldas</a> -
+    <a href="https://en.wikipedia.org/wiki/Colombia">Colombia</a>.
+  </h4>
+  <h4>
+    He loves football (wrong called soccer in the US), and he supports the biggest team ever in the football history:
+    <a href="https://en.wikipedia.org/wiki/Atl%C3%A9tico_Nacional">Club Atletico Nacional de Colombia</a>.
+  </h4>
+  <h4>
+    Jorge Luis finished his high school at Colegio Departamental Mixto de Puerto Salgar, in  <a href="https://en.wikipedia.org/wiki/Puerto_Salgar">Puerto Salgar</a>,
+    <a href="https://en.wikipedia.org/wiki/Cundinamarca_Department">Cundinamarca</a> - <a href="https://en.wikipedia.org/wiki/Colombia">Colombia</a>. After that, he moved to
+    <a href="https://en.wikipedia.org/wiki/Bogot%C3%A1">Bogota</a>, where he did his bachelor in <a href="https://en.wikipedia.org/wiki/Agricultural_engineering">Agricultural Engineering</a>
+    and his Master Degree in <a href="https://en.wikipedia.org/wiki/Water_resources">Water Resources</a> at <a href="http://unal.edu.co/en.html">Universidad Nacional de Colombia</a>
+     - <a href="http://bogota.unal.edu.co/">Sede Bogota</a>.
+  </h4>
+  <h4>
+    Jorge Luis created <a href="/apps/mapapp/">mapapp</a>, as part of the course 514-Geospatial software development. If you have any question
+    about the app, you can write an email to <a href="mailto:jorgessanchez7@gmail.com?subject= About MappApp"> jorgessanchez7@gmail.com</a>
+  </h4>
+{% endblock %}
+
+{# Use the after_app_content block for modals #}
+{% block after_app_content %}
+
+{% endblock %}
+
+{% block app_actions %}
+{% endblock %}
