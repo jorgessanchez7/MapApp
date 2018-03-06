@@ -18,8 +18,15 @@
   <h5> View Utah Counties <input type="checkbox" checked="true" id="Utah_Counties" onClick="showHide();"/> </h5>
   <h5> View Utah Digital Elevation Model <input type="checkbox" checked="true" id="Utah_DEM" onClick="showHide();"/> </h5>
   <br>
+{% gizmo date_picker_initial %}
+{% gizmo date_picker_final %}
   <br>
   <div id="showMap"></div>
+  <br>
+
+{% gizmo select_input %}
+
+{% gizmo timeseries_plot %}
 
 {% endblock %}
 
